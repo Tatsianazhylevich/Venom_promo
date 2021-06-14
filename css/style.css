@@ -4,8 +4,18 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     margin: auto;
+    width: 90%;
+}
+
+.venom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 728px;
+    width: 50%;
+
 }
 
 /* =============================HEADER=========================== */
@@ -46,15 +56,20 @@ body {
     display: block;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 38px;
+    margin-bottom: 2%;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .film-description {
     max-width: 423px;
+    margin-bottom: 3%;
     font-size: 16px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8)
+}
+
+.film-logo {
+    width: 70%;
 }
 
 /* ===========================BUTTON================================== */
@@ -88,17 +103,11 @@ body {
 }
 
 .button-group {
-    margin-top: 70px;
-}
-
-.venom {
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-top: 5%;
 }
 
 .blood {
-    background: url('../img/blood.png') no-repeat top right, #14131a url('../img/background.jpg') center center / 100%;
+    background: url('../img/blood.png') no-repeat top right / 70%, #14131a url('../img/background.jpg') center center / 100%;
 }
 
 .primary-bg {
@@ -206,4 +215,99 @@ body {
 .poster-wrapper .list {
     margin: 0;
     margin-bottom: 20px;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 657px) {
+    .blood {
+        background: #14131a;
+    }
+
+    .venom {
+        top: 10%;
+    }
+
+    .nav {
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        display: none;
+
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background-color: #14131a;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .menu-button-text {
+        margin-right: 10px;
+    }
+
+    .button-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .film-text {
+        text-align: center;
+    }
+
+    .poster-wrapper {
+        flex-direction: column;
+    }
+
+    .poster {
+        margin-bottom: 4%;
+    }
+
+    .content .trailer {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .poster {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .column-2 {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    img {
+        max-width: 100%;
+    }
+
+    .header {
+       margin-bottom: 4%; 
+    }
+
+    .content {
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    .col {
+        margin-bottom: 5%;
+    }
+
+    .film {
+        margin-bottom: 20%;
+    }
 }
